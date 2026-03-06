@@ -27,15 +27,13 @@ body{
 }
 
 .scoreboard {
-    padding: 7.5rem;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding: 2rem;
     display: flex;
-    direction: center;
+    justify-content: center;
     align-items: center;
     gap: 12px;
-    width: 80%;
-    
+    width: 95%;
+    flex-wrap: wrap;
 }
 
 .score-card {
@@ -51,6 +49,19 @@ body{
     backdrop-filter: blur(20px);
     transition: var(--transition-fast);
     box-shadow: 0 0 1rem rgba(255, 255, 255, 0.4);
+}
+
+@media (max-width: 600px) {
+    .scoreboard {
+        padding: 1rem;
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .container {
+        height: auto;
+    }
 }
 
 .subtitle {
