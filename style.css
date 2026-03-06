@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #191913;
+    color: #fff;
+    text-align: center;
+}
+
+.container {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2vmin;
+}
+
+.scoreboard {
+    padding: 7.5rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    display: flex;
+    direction: center;
+    align-items: center;
+    gap: 12px;
+    width: 80%;
+    
+}
+
+.score-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #26261f;
+    border: 1px solid #191913;
+    backdrop-filter: blur(20px);
+    transition: var(--transition-fast);
+    box-shadow: 0 0 1rem rgba(255, 255, 255, 0.4);
+}
+
+.subtitle {
+    font-size: 5vmin;
+    color: #fbd745;
+    align-items: center;
+}
+
+#turn-indicator {
+    padding:0.2px;
+    font-size: 5vmin;
+    color: #ffc400;
+}
+
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 1rem rgba(255, 255, 255, 0.5);
+    font-size: 8vmin;
+    background-color: #ffffc7;
+    color:crimson;
+}
+
+.x-turn {
+    color:green;
+}
+
+.O-turn {
+    color:rgb(251, 25, 25);
+}
+
+.title-x{
+    color:green;
+}
+.title-o{
+    color:rgb(251, 25, 25);
+}
+
+.reset {
+    padding: 1rem;
+    font-size: 1.5rem;
+    background-color: #26261f;
+    color: #fff;
+    border-radius: 1rem;
+    border: 1px solid #191913;
+    box-shadow: 0 0 1rem rgba(255, 255, 255, 0.4);
+
+}
+
+.msg-container {
+    height: 100vmin;
+    color: #ffff00;
+    font-size: 10vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2vmin;
+}
+.new-game{
+    padding: 1rem;
+    font-size: 1.5rem;
+    flex-wrap: wrap;
+    background-color: #26261f;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 1rem rgba(255, 255, 255, 0.4);
+
+}
+
+
+.hide{
+    display: none;
+}
